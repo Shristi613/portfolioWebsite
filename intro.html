@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            background-color: rgb(154, 80, 120);
+            width: 200px;
+            height: 100vh;
+        }
+
+        .sidebar nav {
+            padding: 40px;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            padding: 33px 0;
+        }
+
+        .sidebar nav li a {
+            text-decoration: none;
+            /** it will remove the underline **/
+            color: white;
+        }
+
+        .main {
+            background-color: white;
+            width: 90vw;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .infocontainer {
+            background-color: none;
+            color: rgb(120, 8, 94);
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            /** it will come in center**/
+            display: flex;
+            justify-content: space-around;
+            /** it will create space around content **/
+
+        }
+
+        .devInfo {
+            display: flex;
+            justify-content: center;
+            /** align items in vertically center **/
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hello {
+            font-size: 58px;
+        }
+
+        .name {
+            font-size: 62px;
+            font-weight: bold;
+            font-family: 'Caveat', cursive;
+        }
+
+        .about {
+            font-size: 28px;
+            font-family: 'Caveat', cursive;
+            margin-top: 8px;
+        }
+
+        .buttons {
+            margin-top: 34px;
+        }
+
+        .btn {
+            padding: 5px 14px;
+            border-radius: 16px;
+            color: white;
+            background-color: #22bbca;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 8px 3px;
+            /** top-bottom 0px and left-right 3px **/
+            cursor: pointer;
+            border: 2px solid black;
+            height: 34px;
+        }
+
+        .btn-sm {
+            font-size: 14px;
+            padding: 10px 19px;
+            margin: 12px 0;
+
+        }
+
+        .btn:hover {
+            color: #22bbca;
+            background-color: white;
+        }
+
+        .devPic img {
+            height: 58vh;
+            margin-left: 0px;
+        }
+
+        .mb-3 {
+            padding: 15px 0;
+        }
+
+        .contactform h1 {
+            font-family: 'DM Serif Display', serif;
+            text-align: center;
+            font-size: 38px;
+        }
+
+        .contactform {
+            font-family: 'Caveat', cursive;
+            padding: 0 34px;
+            padding-top: 130px;
+            font-size: 25px;
+        }
+
+        .contactform form div {
+            padding: 10px 0;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .contactform form div input {
+            width: 30vw;
+            border-radius: 5px;
+            margin: 6px 0 0 0;
+            padding: 3px;
+        }
+
+        #emailHelp {
+            font-size: 12px;
+            color: rgb(203, 6, 6);
+            margin: 0 5px;
+            font-weight: bold;
+        }
+
+        #form-check {
+            flex-direction: row;
+        }
+
+        #form-check input {
+            width: 18px;
+            margin: 5px 3px;
+
+        }
+
+        .blogitem {
+            margin: 20px;
+        }
+
+        .blogitem p {
+            font-family: 'Satisfy', cursive;
+            font-size:20px;
+        }
+
+        .blogcontainer h1 {
+            font-family: 'Jost', sans-serif;
+            margin:23px;
+        }
+
+        .blogcontainer {
+            margin-top: 14px;
+            font-size: 40px;
+            
+        }
+        .intro h2{
+            margin:12px;
+            font-family: 'Caveat', cursive;
+        }
+        .intro p{
+            margin:16px;
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+        .skillcontainer{
+            padding:12px;
+        }
+        .skill{
+            width:265px;
+            height:6px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .skillItem{
+            display: flex;
+            align-items: center;
+            font-size: larger18px;
+        }
+        .blogitem h2{
+            margin-top: 36px;
+            font-size: 34px;
+        }
+        .t5{
+            background-color: yellow;
+            width:85px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a> </li>
+                    
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="main">
+            <div class="blogcontainer">
+                <h1>About Me</h1>
+
+            </div>
+            <div class="blogitem">
+
+                <p>Hi, I’m Shristi Chaudhary. I’m a web designer and developer. For the past few months,
+                    <br>I’ve been working on projects for College,Self-practice and Hackathons.
+                    <br>I love to create user experiences that are both functional and engaging.
+                    <br>I worked on several projects of front-end by using HTML,CSS and JS.
+                    <br>I am learning back-end technology as well for becoming a full-stack developer.
+                </p>
+                <h2>My Skills</h2>
+                <div class="skillcontainer">
+                    <div class="skillItem">HTML: <div class="skill t1"></div></div>
+                    <div class="skillItem">CSS: <div class="skill t1"></div></div>
+                    <div class="skillItem">JavaScript: <div class="skill t5 t1"></div></div>
+                    <div class="skillItem">Basic Python: <div class="skill t1"></div></div>
+                    <div class="skillItem">Advanced Python: <div class="skill t1"></div></div>
+                    <div class="skillItem">Basic Java: <div class="skill t5 t1"></div></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

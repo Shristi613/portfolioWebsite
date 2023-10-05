@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            background-color:rgb(154, 80, 120);
+            width: 200px;
+            height: 100vh;
+        }
+
+        .sidebar nav {
+            padding: 40px;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            padding: 33px 0;
+        }
+        .sidebar nav li a{
+            text-decoration: none; /** it will remove the underline **/
+            color:white;
+        }
+        .main {
+            background-color:white;
+            width: 90vw;
+            padding:23px;
+        }
+
+        .container {
+            display: flex;
+        }
+        .infocontainer{
+            background-color: none;
+            color:rgb(120, 8, 94);
+            height: 58vh;
+            width: 80vw;
+            margin:144px auto;
+            /** it will come in center**/
+            display:flex;
+            justify-content:space-around; /** it will create space around content **/
+            flex-wrap: wrap;
+            
+        }
+        .devInfo{
+            display:flex;
+            justify-content:center; /** align items in vertically center **/
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hello{
+            font-size:58px;
+        }
+        .name{
+            font-size: 62px;
+            font-weight: bold;
+            font-family: 'Caveat', cursive;
+        }
+        .about{
+            font-size: 38px;
+            font-family: 'Caveat', cursive;
+            margin-top:8px;
+        }
+        
+        .buttons{
+            margin-top: 34px;
+        }
+        .buttons button{
+            padding:9px 14px; 
+            border-radius:16px;
+            color:white;
+            background-color:#22bbca;
+            font-size: 20px;
+            font-weight: bold;
+            margin:0 3px;  /** top-bottom 0px and left-right 3px **/
+            cursor: pointer;
+            border:2px solid black;
+        }
+        .buttons button:hover{
+            color:#22bbca;
+            background-color:white;
+        }
+        .devpic{
+            height: 58vh;                            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a> </li>
+                
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="" alt="">
+                <img class="cross" src="" alt="">
+            </div>
+        
+            <div class="infocontainer">
+                <div class="devInfo">
+                    <div class="hello">Hi! I am</div>
+                    <div class="name">Shristi Chaudhary</div>
+                    <div class="about">A Front-End Developer who builds the Frontend
+                        of Websites that leads to the success of the overall product based
+                        on HTML,CSS and Javascript
+                    </div>
+                    
+                    <div class="buttons">
+                        <button>Download CV</button>
+                        <button>Contact Me</button>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
